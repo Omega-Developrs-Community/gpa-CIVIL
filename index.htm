@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>GPA - Grade Points Average.</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <span id="iCon">
+
+        </span>
+        Omega Developrs
+    </header>
+
+    <main id=container>
+
+        <section class="int-user">
+            <h4 class="greetings">
+                Hello, there.
+            </h4>
+            <p class="description">
+                Let's compute 
+                 <span class="colorize">
+                    Grade Points Average.
+                </span>
+            </p>
+        </section>
+
+
+        <div id="usr-input">
+
+            <label for="count">
+                Enter the number of subjects
+            </label>
+            <input type="number" name="count" id="count" min=1 max=15 title="Range(1-15)">
+
+
+            <button type="button" onclick = "append()" title="Create additional fields to fetch your grades.">
+                Create Space
+            </button>
+
+        </div>
+
+       <div id="con-space" >
+        <span id="space">
+            <select id="paper" class="paper" >
+                <option value="4">Mathematics III</option>
+                <option value="3">Building Materials and cons.</option>
+                <option value="3">Engineering Geology</option>
+                <option value="4">Mechanics of Solids</option>
+                <option value="3">Mechanics of Fluids </option>
+                <option value="3">Surveying I </option>
+                <option value="1"> Surveying Practical - I </option>
+                <option value="1">Strength of Materials Lab</option>
+    
+                
+                <option value="4">Numerical Methods</option>
+                <option value="3">Surveying II</option>
+                <option value="3">Structural Mechanics</option>
+                <option value="3">Applied Hydraulic Engg.</option>
+                <option value="4">Mechanics of Solids</option>
+                <option value="3">Transportation Engg.- I</option>
+                <option value="1">Surveying Practical - II</option>
+                <option value="1">Hydraulic Engg. Lab</option>
+                <option value="1">Soil Mechanics Lab </option>
+    
+    
+                <option value="3">Concrete technology</option>
+                <option value="3">Design of Reinforced Concrete Elements</option>
+                <option value="4">Structural Analysis - I</option>
+                <option value="3">Environmental Engg.</option>
+                <option value="3">Foundation Engg.</option>
+                <option value="3">Elective </option>
+                <option value="1">Concrete & Highway Lab</option>
+                <option value="1">Computer Aided Building Drawing</option>
+    
+    
+                <option value="3">Design Of  RC & MS</option>
+                <option value="4">Structural Analysis - II</option>
+                <option value="3">Environmental Engg. - II</option>
+                <option value="3">Irrigation Engg.</option>
+                <option value="3">Principles of Env.science</option>
+                <option value="3">Elective  </option>
+                <option value="3">Elective  </option>
+                <option value="2">D & Dfor I&Env.Structures </option>
+                <option value="1">Env. Engg. Lab</option>
+                <option value="2">Field Survey Camp</option>
+                <option value="1">In Plant Training</option>
+    
+    
+                <option value="3">Design of Steel Structures</option>
+                <option value="3">Estimation Quantity Surveying & Valuation</option>
+                <option value="3">Elective</option>
+                <option value="3">Elective </option>
+                <option value="2">D&D for Steel & RCC Structures</option>
+                <option value="4">Design Project</option>
+                <option value="2">Comprehensive Objective type Exam</option>
+    
+    
+                
+                <option value="3">Elective </option>
+                <option value="3">Elective </option>
+                <option value="3"> Elective</option>
+                <option value="10">Project Work</option>
+               
+            </select>
+            <select id="grade" class="grade">
+                <option value="10">O</option>
+                <option value="9">A+</option>
+                <option value="8">A</option>
+                <option value="7">B+</option>
+                <option value="6">B</option>
+                <option value="0">RA</option>
+            </select>
+        </span>
+       </div>
+
+        <div id= "btn-options">
+
+            <button type="submit" onclick= "compute()">
+                Compute GPA
+            </button>
+
+            <button type="reset" onclick= "reset()">
+                Reset                
+            </button>
+
+
+        </div>
+
+
+
+        <div id="result">
+
+            <span class="con-label">
+                Your 
+                <span class="colorize">
+                    Grade Point Average
+                </span>
+                is 
+                <span id="gradPoint">
+                </span>
+            </span>
+            
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="foot" id="foot">
+            Copyrights reserved. (c) 2020 Omega Developrs
+        </div>
+    </footer>
+    
+</body>
+</html>
